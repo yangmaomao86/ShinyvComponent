@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="libs/jquery-1.11.3.min.js"></script>
+    <script src="hs/framewrok/hsValidate.js"></script>
+    <script src="hs/framewrok/hsUtil.js"></script>
+    <script src="hs/framewrok/hsFile.js"></script>
+    <script src="hs/framewrok/hsDate.js"></script>
+    <script src="hs/framewrok/indigo.js"></script>
+    <script src="hs/test/tt.js"></script>
+</head>
+<body>
+
+
+<div id="div1">this is content of div1</div>
+<div id="div2">this is another div</div>
+
+
+<script type="text/javascript">
+
+    var obj1 = {
+        name: "ym",
+        age: 30
+    };
+    var obj2= {
+        score:48
+    }
+
+    hsFile.uploadFile("", "/api/handler.php", {}, 500);
+
+    var ret = hsDate.dateDiff("2017-05-01 20:37:54", "2017-05-02 13:48:07", "h");
+    show(ret);
+
+</script>
+
+
+</body>
+</html>

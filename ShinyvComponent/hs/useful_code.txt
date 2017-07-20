@@ -1,0 +1,16 @@
+﻿        
+		//可重用验证代码
+		var vals = [{ val: temp.cenggao, msg: "层数" }, { val: temp.danyuanshu, msg: "单元数" }, { val: temp.zongtaoshu, msg: "总套数" }, { val: temp.shengyutaoshu, msg: "剩余套数" }, { val: temp.ti, msg: "电梯数量" }, { val: temp.hu, msg: "电梯数量" }, { val: temp.building_status, msg: "销售状态" }];
+
+        for (var i = 0; i < vals.length; i++) {
+            var item = vals[i];
+            if (!isHasValue(item.val)) {
+                mymsg(item.msg + "必填！");
+                return;
+            }
+            if (!isNum(item.val)) {
+                mymsg(item.msg+"必须是数字！");
+                return;
+            }
+        }
+
